@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://camo.qiitausercontent.com/f474ffd9a45d7018b4f6751ad436c58011bff2c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f64663437366630322d373734612d653063352d633033332d3066383135376261633136312e706e67
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Qiita 白黒画像 着色 ライブラリ</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Qiita 白黒画像 着色 ライブラリ",
+  "datePublished": "2021-04-30",
+  "image": [http://anti.rosx.net/etc/memo/013_p03a.png,http://manga.lemon-s.com/img/008e.jpg,https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E3%2581%258Cchainer%25E3%2581%25A7%25E7%25B7%259A%25E7%2594%25BB%25E7%259D%2580%25E8%2589%25B2%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%25E3%2582%258F%25E3%2582%258A%25E3%2581%25A8%25E3%2581%25A7%25E3%2581%258D%25E3%2581%259F%25E3%2580%2582%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dc09b9d928414d776063b18a2e6cde51a&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540taizan%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D9feb0c4f8f370acd9fc2e62db8770a82&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=26bc12a54c4a179527cada97e9b515c0],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=qiita 白黒画像 着色 ライブラリ",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Qiita 白黒画像 着色 ライブラリ</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-light" href="/%E9%AB%AA-%E3%81%AE-%E8%89%B2-%E8%8C%B6%E8%89%B2-%E3%83%A1%E3%83%B3%E3%82%BA.html">髪 の 色 茶色 メンズ</a>
+											<a class="badge badge-dark" href="/%E7%B3%B8%E6%BA%80%E3%83%88%E3%83%AA%E3%83%A0%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3-2020-%E3%82%B3%E3%83%AD%E3%83%8A.html">糸満トリムマラソン 2020 コロナ</a>
+											<a class="badge badge-primary" href="/%E3%82%A2%E3%82%A4%E3%82%B9%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%81%AF%E4%BD%95%E3%81%A7%E7%9D%80%E8%89%B2.html">アイスのブルーは何で着色</a>
+											<a class="badge badge-info" href="/%E7%89%B9%E5%BE%B4%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E3%81%A8%E3%81%AF-%E3%82%B3%E3%83%AD%E3%83%8A%E3%81%BE%E3%81%A8%E3%82%81.html">特徴新型コロナウイルスとは コロナまとめ</a>
+											<a class="badge badge-primary" href="/lamy-4-%E8%89%B2-%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3-%E6%9B%BF%E3%81%88-%E8%8A%AF.html">lamy 4 色 ボールペン 替え 芯</a>
+											<a class="badge badge-success" href="/%E4%B8%8D%E4%BA%8C%E5%AE%B6-%E3%83%90%E3%82%A4%E3%83%88-%E9%AB%AA-%E8%89%B2.html">不二家 バイト 髪 色</a>
+											<a class="badge badge-secondary" href="/%E6%AD%AF%E3%81%8C%E7%9D%80%E8%89%B2%E3%81%97%E3%82%84%E3%81%99%E3%81%84%E8%96%AC.html">歯が着色しやすい薬</a>
+											<a class="badge badge-secondary" href="/%E3%83%A9%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%BC-13mwz-%E8%89%B2-%E8%90%BD%E3%81%A1.html">ラングラー 13mwz 色 落ち</a>
+											<a class="badge badge-dark" href="/%E5%8D%92-%E5%9C%92-%E5%BC%8F-%E8%89%B2-%E7%95%99%E8%A2%96.html">卒 園 式 色 留袖</a>
+											<a class="badge badge-info" href="/%E3%83%9D%E3%83%AD%E3%82%B7%E3%83%A3%E3%83%84-%E8%89%B2-%E8%90%BD%E3%81%A1-%E5%BE%A9%E6%B4%BB.html">ポロシャツ 色 落ち 復活</a>
+											<a class="badge badge-primary" href="/%E3%82%AF%E3%83%AA%E3%82%B9%E3%82%BF-%E3%83%A9%E3%83%95%E3%82%92%E8%A6%8B%E3%81%AA%E3%81%8C%E3%82%89%E7%9D%80%E8%89%B2.html">クリスタ ラフを見ながら着色</a>
+											<a class="badge badge-primary" href="/%E3%82%A8%E3%82%AD%E3%83%9D%E3%82%B7-%E7%9D%80%E8%89%B2-%E3%82%A2%E3%82%AF%E3%83%AA%E3%83%AB%E7%B5%B5%E3%81%AE%E5%85%B7.html">エキポシ 着色 アクリル絵の具</a>
+											<a class="badge badge-secondary" href="/%E6%98%A0%E7%94%BB-%E3%82%B3%E3%83%AD%E3%83%8A-%E9%87%91%E6%B2%A2-%E4%B8%8A%E6%98%A0%E6%99%82%E9%96%93.html">映画 コロナ 金沢 上映時間</a>
+											<a class="badge badge-warning" href="/%E5%8D%83%E8%91%89%E7%9C%8C%E7%94%B7%E6%80%A7%E3%82%B3%E3%83%AD%E3%83%8A%E4%BD%95%E5%B8%82.html">千葉県男性コロナ何市</a>
+											<a class="badge badge-info" href="/%E8%BB%8A%E6%A0%BC-%E3%82%B3%E3%83%AD%E3%83%8A-%E3%83%9E%E3%83%BC%E3%82%AF2-%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%B3-%E3%82%BB%E3%83%AB%E3%82%B7%E3%82%AA-%E3%82%BB%E3%83%B3%E3%83%81%E3%83%A5%E3%83%AA%E3%83%BC.html">車格 コロナ マーク2 クラウン セルシオ センチュリー</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E7%2599%25BD%25E9%25BB%2592%25E7%2594%25BB%25E5%2583%258F%25E3%2582%2592%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E7%2594%25BB%25E5%2583%258F%25E3%2581%25AB%25E5%25A4%2589%25E6%258F%259B%25E3%2581%2599%25E3%2582%258B%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2528pix2pix%2529%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D61855c9078009bfe39410d7abb4e786f&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540shushin%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D24cdd63ebf898efc219b1503eb4ca72a&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=c65bb4825386cafb463b81a4d7f75640" data-lightbox="roadtrip" data-title="白黒画像をカラー画像に変換するネットワークを作ってみた Pix2pix Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E7%2599%25BD%25E9%25BB%2592%25E7%2594%25BB%25E5%2583%258F%25E3%2582%2592%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E7%2594%25BB%25E5%2583%258F%25E3%2581%25AB%25E5%25A4%2589%25E6%258F%259B%25E3%2581%2599%25E3%2582%258B%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2528pix2pix%2529%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D61855c9078009bfe39410d7abb4e786f&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540shushin%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D24cdd63ebf898efc219b1503eb4ca72a&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=c65bb4825386cafb463b81a4d7f75640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoH_uQsMIqfNizsKmPa8MmYo-xt7fzcNUKtaPmZPDJkre81oMvODv_gnQc7YPPyyItn5k';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒画像をカラー画像に変換するネットワークを作ってみた Pix2pix Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/8e2dccd8a8d4c8d83af8a4533f04c2c24098ffc2/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f35666237643631362d303231372d386130612d353465372d3735626263363863343538372e706e67" data-lightbox="roadtrip" data-title="白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita">
+						<img class="card-img" src="https://camo.qiitausercontent.com/8e2dccd8a8d4c8d83af8a4533f04c2c24098ffc2/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f35666237643631362d303231372d386130612d353465372d3735626263363863343538372e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_-dhoycN4qiH5TUro_Y7B6-ZUqLCF6-qq5X9duZ0exVPd3_QhDAHhxiI9UFBxalraQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/7d5cf29f8975abe2edc79383194cc1c0167b2eae/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f32383436366634322d636332632d653561362d386334372d3630363630386631653631632e706e67" data-lightbox="roadtrip" data-title="白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita">
+						<img class="card-img" src="https://camo.qiitausercontent.com/7d5cf29f8975abe2edc79383194cc1c0167b2eae/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f32383436366634322d636332632d653561362d386334372d3630363630386631653631632e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8HLqEYbo2Nxj2w9t9cJ2Z3LXHUBcExjJgoAtMwy5OFwErpE5iDUgtFtCCUJkmh0MhdkE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F48238%2Fdfafb499-27de-166b-31ac-a9b9c5d0ce61.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=c13cd19234d880aff4bb08a79c673a83" data-lightbox="roadtrip" data-title="白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F48238%2Fdfafb499-27de-166b-31ac-a9b9c5d0ce61.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=c13cd19234d880aff4bb08a79c673a83" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRIkr0OnCvs6Zgka4_Ojx81MHXuaZzEEt_uq2fxiQ9w5Hp1sLi-07PzwWQRX-7jQnPA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F48238%2F7a8166ce-4d24-7353-d3b7-7808446a5615.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=916b5e3ad8e5ec5740ee358aa2283e3b" data-lightbox="roadtrip" data-title="白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F48238%2F7a8166ce-4d24-7353-d3b7-7808446a5615.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=916b5e3ad8e5ec5740ee358aa2283e3b" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvHCHwnAJ7LzQTiDuR46yytnMqAarx7kpxAlMkftNaRRCJFI9si6ph44Tn55wwJCkldW8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/f474ffd9a45d7018b4f6751ad436c58011bff2c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f64663437366630322d373734612d653063352d633033332d3066383135376261633136312e706e67" data-lightbox="roadtrip" data-title="白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita">
+						<img class="card-img" src="https://camo.qiitausercontent.com/f474ffd9a45d7018b4f6751ad436c58011bff2c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f64663437366630322d373734612d653063352d633033332d3066383135376261633136312e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAlGI48yNurDk8gQbOYK25tAvRIlqZw2b5pu9wlA3BFsg0cRw7_bM9WB9Wl_Aa02fQQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E5%2586%2599%25E7%259C%259F%25E3%2582%2592%25E3%2582%25B4%25E3%2583%2583%25E3%2583%259B%25E3%2581%25AE%25E7%2594%25BB%25E9%25A2%25A8%25E3%2581%25AB%25E5%25A4%2589%25E6%258F%259B%25E3%2581%2599%25E3%2582%258BWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dc06fc5bf4232bbdb963b00eaf36e3316&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540m-naoki%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da45c810eb5d651d21fd8fb6cccdd7cc1&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=c884bdd726155f0744beba793859fc5c" data-lightbox="roadtrip" data-title="写真をゴッホの画風に変換するwebアプリを作ってみた Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E5%2586%2599%25E7%259C%259F%25E3%2582%2592%25E3%2582%25B4%25E3%2583%2583%25E3%2583%259B%25E3%2581%25AE%25E7%2594%25BB%25E9%25A2%25A8%25E3%2581%25AB%25E5%25A4%2589%25E6%258F%259B%25E3%2581%2599%25E3%2582%258BWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dc06fc5bf4232bbdb963b00eaf36e3316&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540m-naoki%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da45c810eb5d651d21fd8fb6cccdd7cc1&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=c884bdd726155f0744beba793859fc5c" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCG5Cv4JBnfNiW1ESynUqHZQhrdzy7jnukYo3v4egB-0NPPCFnC51yn7UMtiBrVzoawQw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				写真をゴッホの画風に変換するwebアプリを作ってみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E3%2581%258Cchainer%25E3%2581%25A7%25E7%25B7%259A%25E7%2594%25BB%25E7%259D%2580%25E8%2589%25B2%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%25E3%2582%258F%25E3%2582%258A%25E3%2581%25A8%25E3%2581%25A7%25E3%2581%258D%25E3%2581%259F%25E3%2580%2582%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dc09b9d928414d776063b18a2e6cde51a&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540taizan%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D9feb0c4f8f370acd9fc2e62db8770a82&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=26bc12a54c4a179527cada97e9b515c0" data-lightbox="roadtrip" data-title="B Chainer 初心者がchainerで線画着色してみた わりとできた">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%25E3%2581%258Cchainer%25E3%2581%25A7%25E7%25B7%259A%25E7%2594%25BB%25E7%259D%2580%25E8%2589%25B2%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%25E3%2582%258F%25E3%2582%258A%25E3%2581%25A8%25E3%2581%25A7%25E3%2581%258D%25E3%2581%259F%25E3%2580%2582%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dc09b9d928414d776063b18a2e6cde51a&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540taizan%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D9feb0c4f8f370acd9fc2e62db8770a82&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=26bc12a54c4a179527cada97e9b515c0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5tCK-osqURxLH6FwpV8s92MK9QNZG2CYwe9BkosIu5gnV-M5LU6jmqRm01Gxyy1Fs5ZU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				B Chainer 初心者がchainerで線画着色してみた わりとできた
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-image-store.s3.amazonaws.com/0/64357/profile-images/1523412835" data-lightbox="roadtrip" data-title="Riyaaaa A Qiita">
+						<img class="card-img" src="https://qiita-image-store.s3.amazonaws.com/0/64357/profile-images/1523412835" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOD2tkV8c5n7QSQyJ--atTmkff77uHBpcJsbQkbc4cyOoy9I2pStQbGzsPVOU8PRIUso';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Riyaaaa A Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pbs.twimg.com/media/C3LdaE0VUAEbRM5.jpg:medium" data-lightbox="roadtrip" data-title="線画に自動で着色してくれるサービス が爆誕 あまりの精度の高さに もう自分で塗る必要ないじゃん Togetter">
+						<img class="card-img" src="https://pbs.twimg.com/media/C3LdaE0VUAEbRM5.jpg:medium" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyqjq3GCOWQDoB8tS-ugwDd0XAf7AQA21ZzafYUcCWIkzvxH-klmUmW-yjJlQiAGS0Zvc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線画に自動で着色してくれるサービス が爆誕 あまりの精度の高さに もう自分で塗る必要ないじゃん Togetter
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F232088%2F5524b072-88b6-38af-b5b9-6b9a9a63d72c.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=8ce48e238b683214f8c01c27a8d6ca82" data-lightbox="roadtrip" data-title="訓練 データ不要 ディープラーニングフレームワークを使ったアニメの線画の自動生成 Qiita">
+						<img class="card-img" src="https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F232088%2F5524b072-88b6-38af-b5b9-6b9a9a63d72c.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=8ce48e238b683214f8c01c27a8d6ca82" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4EDVLcaZRSKJOr1iD6IAnm24mp7026XCi8E4mIikjpwZCwE8rMy_hQHnWw5ERo04HMtc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				訓練 データ不要 ディープラーニングフレームワークを使ったアニメの線画の自動生成 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F141993%2F199bf641-77d7-11ba-34fb-8fac0ee97fc7.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=3f39baf5a57d1ecdfe6a823be23df2cf" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F141993%2F199bf641-77d7-11ba-34fb-8fac0ee97fc7.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=3f39baf5a57d1ecdfe6a823be23df2cf" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaDfh5t0_rK4kEmLUlbcZ4Bl1Q3FSh4Nid3k96HoZ6EqMY8Pn9GIBKaBfuPYNVm7J3aM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pimg.togetter.com/6c78bd882a7c004a6c0ceee8445e29e8a7cbcf1a/687474703a2f2f63646e2e71696974612e636f6d2f6173736574732f71696974612d66622d32383837653762346161643836666438633235636561383438343666323233362e706e67?w=250&amp;t=c" data-lightbox="roadtrip" data-title="線画に自動で着色してくれるサービス が爆誕 あまりの精度の高さに もう自分で塗る必要ないじゃん Togetter">
+						<img class="card-img" src="https://pimg.togetter.com/6c78bd882a7c004a6c0ceee8445e29e8a7cbcf1a/687474703a2f2f63646e2e71696974612e636f6d2f6173736574732f71696974612d66622d32383837653762346161643836666438633235636561383438343666323233362e706e67?w=250&amp;t=c" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrvRR4Pc6nZe82e2d79D9D3V6bR-cpHxSKfhqmCUgaU22OTzPgV8dZBnfOpLy1anBxMzQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線画に自動で着色してくれるサービス が爆誕 あまりの精度の高さに もう自分で塗る必要ないじゃん Togetter
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/s/snona/20160801/20160801000136.jpg" data-lightbox="roadtrip" data-title="Deep Learningでモノクロ画像をカラーに 暇な日々にスパイスを">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/snona/20160801/20160801000136.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6u3rnf00OgDIOhrfM0ft6uFvP7VwQzMePn8ZJD4SswUYxc6UUX8aoPXo8RZhG26JYlUs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Deep Learningでモノクロ画像をカラーに 暇な日々にスパイスを
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://anti.rosx.net/etc/memo/013_01.png" data-lightbox="roadtrip" data-title="13 白黒写真の自動着色を試してみる">
+						<img class="card-img" src="http://anti.rosx.net/etc/memo/013_01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbhHog6jUilySTXmoljbSkCrgrz91qChUL0W1yAXlHXXR_ce5aYIxcqLCBRrSXdJUqubM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				13 白黒写真の自動着色を試してみる
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F563526%2Faf818a7c-5127-f321-4214-d5cf157d8fb0.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=22a04eb07ac326b3cf904a7b99496c83" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F563526%2Faf818a7c-5127-f321-4214-d5cf157d8fb0.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=22a04eb07ac326b3cf904a7b99496c83" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkC9LvR3I2NQCx4mml8IY_XMcGT-_lypYLP4MRty9khrJqDYNzVg75Up1djD_Mc8noYX8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://manga.lemon-s.com/img/008e.jpg" data-lightbox="roadtrip" data-title="線画を自動着色するai Paintschainer の脅威 漫画の描き方まとめ 漫画家を目指している人の広場">
+						<img class="card-img" src="http://manga.lemon-s.com/img/008e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Gm-0aB_fUgstcL7MrblMf14ALJF7GSffpLkUopbhNJbqLq76l6SNHR67YsUiaFMgpNM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線画を自動着色するai Paintschainer の脅威 漫画の描き方まとめ 漫画家を目指している人の広場
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F314373%2Fcac2ec2b-1532-2cf7-fde6-3cbf65aaa668.png?ixlib=rb-1.2.2&amp;auto=compress%2Cformat&amp;gif-q=60&amp;s=8000a5d1a92a91540b51383a912b0773" data-lightbox="roadtrip" data-title="Swift 中二病の突然の発作に備えて Calayerで魔法陣を描く Coreanimation Laptrinhx">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F314373%2Fcac2ec2b-1532-2cf7-fde6-3cbf65aaa668.png?ixlib=rb-1.2.2&amp;auto=compress%2Cformat&amp;gif-q=60&amp;s=8000a5d1a92a91540b51383a912b0773" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03sDKsmupzxxa3awa2IxkZRpejEyBGHGdwyMvJ3ocFT9RStXxdDT7o0W1ijJ4ztKqXF4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Swift 中二病の突然の発作に備えて Calayerで魔法陣を描く Coreanimation Laptrinhx
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F305996%2Ff07e9f84-b8cb-53f3-2d88-b83c31513806.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=48bad4e79b6edcc33ecdeb4e145b81af" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F305996%2Ff07e9f84-b8cb-53f3-2d88-b83c31513806.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=48bad4e79b6edcc33ecdeb4e145b81af" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhUm9_zyr_bMIJQjbM_sCPG7-bdqDFcyn2xVl3WijDeLmoSNpIALO1jVmxlE_nMnDo64';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://manga.lemon-s.com/img/paintschainer.png" data-lightbox="roadtrip" data-title="線画を自動着色するai Paintschainer の脅威 漫画の描き方まとめ 漫画家を目指している人の広場">
+						<img class="card-img" src="http://manga.lemon-s.com/img/paintschainer.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnBhBAQI9UR6obwsiQhvgLSheD_k52oidFX7q5t9Wq_ogLOuaFBPVQtzPEQE6HJFND0DY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線画を自動着色するai Paintschainer の脅威 漫画の描き方まとめ 漫画家を目指している人の広場
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://farm8.staticflickr.com/7284/27381973676_79b9e05267_b.jpg" data-lightbox="roadtrip" data-title="早稲田大学が開発した人工知能を使ってモノクロ写真を自動でカラー化する技術を試してみました 代助のブログ">
+						<img class="card-img" src="https://farm8.staticflickr.com/7284/27381973676_79b9e05267_b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSfgoCS2VWTCSfBKjtWI_Br1vu2sZxbEYM4A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				早稲田大学が開発した人工知能を使ってモノクロ写真を自動でカラー化する技術を試してみました 代助のブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/68e88790046184d384f052303682a199aa25a39b/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f31663762333438362d383731342d306531652d363664382d6231363664323136623236372e706e67" data-lightbox="roadtrip" data-title="白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita">
+						<img class="card-img" src="https://camo.qiitausercontent.com/68e88790046184d384f052303682a199aa25a39b/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f34383233382f31663762333438362d383731342d306531652d363664382d6231363664323136623236372e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHw-sNfYw9p3nbIi6ykoMpRXbfsdCbGh8vQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真に着彩する人工知能を使い 実際の色見と推測による色見を比較してみた Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.shikoan.com/wp-content/uploads/2018/12/qiita_04.png" data-lightbox="roadtrip" data-title="Qiita開始1年で2000contribution達成してわかったこと Shikoan S Ml Blog">
+						<img class="card-img" src="https://blog.shikoan.com/wp-content/uploads/2018/12/qiita_04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnElV2iwZozsAp8oqHF_HgmJP0vCKmryO6Nw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Qiita開始1年で2000contribution達成してわかったこと Shikoan S Ml Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://anti.rosx.net/etc/memo/013_p03a.png" data-lightbox="roadtrip" data-title="13 白黒写真の自動着色を試してみる">
+						<img class="card-img" src="http://anti.rosx.net/etc/memo/013_p03a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcsINZMJ7vtxm57Pu_Z9FY1d6AnLAX4ACajg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				13 白黒写真の自動着色を試してみる
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/s/snona/20160801/20160801015900.jpg" data-lightbox="roadtrip" data-title="Deep Learningでモノクロ画像をカラーに 暇な日々にスパイスを">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/snona/20160801/20160801015900.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6YN7x4vy9qDDcdb6wL25p5oPkT4_r0Ea2ng';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Deep Learningでモノクロ画像をカラーに 暇な日々にスパイスを
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pbs.twimg.com/media/C3NqmW0UYAExi9m.jpg:medium" data-lightbox="roadtrip" data-title="線画に自動で着色してくれるサービス が爆誕 あまりの精度の高さに もう自分で塗る必要ないじゃん Togetter">
+						<img class="card-img" src="https://pbs.twimg.com/media/C3NqmW0UYAExi9m.jpg:medium" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvnb72_BYjGECQjaCifIEwA5yySV0S29hPQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線画に自動で着色してくれるサービス が爆誕 あまりの精度の高さに もう自分で塗る必要ないじゃん Togetter
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://manga.lemon-s.com/img/ad_dl.png" data-lightbox="roadtrip" data-title="線画を自動着色するai Paintschainer の脅威 漫画の描き方まとめ 漫画家を目指している人の広場">
+						<img class="card-img" src="http://manga.lemon-s.com/img/ad_dl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FgTJe1t-uohpdCxjmoy5njGIrPMXHZJCdw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				線画を自動着色するai Paintschainer の脅威 漫画の描き方まとめ 漫画家を目指している人の広場
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F305996%2F873299df-eb5b-1c12-fe73-2a24d17a2f2a.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=9f408607582184d6bd6daa6b50c503eb" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F305996%2F873299df-eb5b-1c12-fe73-2a24d17a2f2a.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=9f408607582184d6bd6daa6b50c503eb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1N332rnLcUkyuvevE-OZ_RbnFuVZPRLF9Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://anti.rosx.net/etc/memo/013_q02a.png" data-lightbox="roadtrip" data-title="13 白黒写真の自動着色を試してみる">
+						<img class="card-img" src="http://anti.rosx.net/etc/memo/013_q02a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsjR9SRYEjYdw7B57cyJBw7-wJSYOiSV98w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				13 白黒写真の自動着色を試してみる
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/64608/f3c53bbe-bc5f-2b94-4b84-82fdd17b0a03.png" data-lightbox="roadtrip" data-title="2019年5月版 機械学習 深層学習を学び トレンドを追うためのリンク150選 Qiita">
+						<img class="card-img" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/64608/f3c53bbe-bc5f-2b94-4b84-82fdd17b0a03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6hqnJYojIIR5f2dQ_Uk0kc7x38Lg1z5sDwA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				2019年5月版 機械学習 深層学習を学び トレンドを追うためのリンク150選 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.slidesharecdn.com/ss_thumbnails/slide-infrawars-180629121212-thumbnail-4.jpg?cb=1530274400" data-lightbox="roadtrip" data-title="さくらのinfra Wars で 利用されている技術">
+						<img class="card-img" src="https://cdn.slidesharecdn.com/ss_thumbnails/slide-infrawars-180629121212-thumbnail-4.jpg?cb=1530274400" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbiPu1RtVgwjxPux2lWglG-7HjZN8j_BMzw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				さくらのinfra Wars で 利用されている技術
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.shikoan.com/wp-content/uploads/2018/12/qiita_03.png" data-lightbox="roadtrip" data-title="Qiita開始1年で2000contribution達成してわかったこと Shikoan S Ml Blog">
+						<img class="card-img" src="https://blog.shikoan.com/wp-content/uploads/2018/12/qiita_03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQUajZIzvUyJWU-7TdiyKi-qW4Jvku8FpfA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Qiita開始1年で2000contribution達成してわかったこと Shikoan S Ml Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F305996%2Fbbf1536c-6f40-f316-4747-5c12e31d695a.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=84878ca0ed82f51f1ca2bcde188f6379" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F305996%2Fbbf1536c-6f40-f316-4747-5c12e31d695a.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=84878ca0ed82f51f1ca2bcde188f6379" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDd-B4sc4mPdhduURLMnh6ablnsLZ9wz2WOw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>

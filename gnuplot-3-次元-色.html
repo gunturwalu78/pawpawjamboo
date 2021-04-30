@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/color_jet_white.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Gnuplot 3 次元 色</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Gnuplot 3 次元 色",
+  "datePublished": "2021-04-30",
+  "image": [http://blog-imgs-33.fc2.com/a/c/t/activecontour/surf_colorbar.jpg,https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_005.png,http://www.natural-science.or.jp/images/20120105-i5.gif],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gnuplot 3 次元 色",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Gnuplot 3 次元 色</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-info" href="/%E6%B0%B4%E6%B2%A2-%E3%83%80%E3%82%A6%E3%83%B3-%E8%89%B2-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81.html">水沢 ダウン 色 おすすめ</a>
+											<a class="badge badge-success" href="/%E3%82%B3%E3%83%AD%E3%83%8A%E9%9B%BB%E6%B0%97-sh-9000.html">コロナ電気 sh 9000</a>
+											<a class="badge badge-info" href="/%E8%89%B2-%E3%81%AE-%E3%81%A4%E3%81%8B-%E3%81%AA%E3%81%84-%E3%83%95%E3%82%A1%E3%83%B3%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">色 の つか ない ファンデーション</a>
+											<a class="badge badge-success" href="/%E3%83%8F%E3%82%A4%E3%82%AD%E3%83%A5%E3%83%BC-%E4%BA%94%E8%89%B2-%E5%80%92%E3%82%8C%E3%82%8B.html">ハイキュー 五色 倒れる</a>
+											<a class="badge badge-success" href="/%E8%89%B2-%E3%81%AE-%E5%90%8D%E5%89%8D-%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C.html">色 の 名前 おしゃれ</a>
+											<a class="badge badge-secondary" href="/%E5%AE%89%E5%9F%8E-%E3%82%B3%E3%83%AD%E3%83%8A-%E6%B9%AF-%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3.html">安城 コロナ 湯 クーポン</a>
+											<a class="badge badge-warning" href="/jww-cad-%E7%B7%9A-%E8%89%B2-%E5%A4%89%E6%9B%B4.html">jww cad 線 色 変更</a>
+											<a class="badge badge-light" href="/%E3%83%9C%E3%83%96-%E3%81%AB-%E5%90%88%E3%81%86-%E9%AB%AA-%E8%89%B2.html">ボブ に 合う 髪 色</a>
+											<a class="badge badge-danger" href="/%E3%83%80%E3%83%BC%E3%83%9E-%E3%82%AB%E3%83%A9%E3%83%BC-%E8%89%B2-%E9%81%B8%E3%81%B3.html">ダーマ カラー 色 選び</a>
+											<a class="badge badge-warning" href="/4-%E8%89%B2-%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3-%E3%83%A2%E3%83%B3%E3%83%96%E3%83%A9%E3%83%B3.html">4 色 ボールペン モンブラン</a>
+											<a class="badge badge-dark" href="/100-%E5%9D%87-%E3%83%8D%E3%82%A4%E3%83%AB-%E8%89%B2-%E8%A6%8B%E6%9C%AC.html">100 均 ネイル 色 見本</a>
+											<a class="badge badge-dark" href="/%E3%83%A9%E3%82%B7%E3%83%A3-%E3%82%B9%E3%83%AA%E3%83%83%E3%83%97%E3%82%B9-%E4%BA%BA%E6%B0%97-%E8%89%B2-%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0.html">ラシャ スリップス 人気 色 ランキング</a>
+											<a class="badge badge-secondary" href="/%E6%A3%9A-%E8%89%B2-%E3%82%92-%E5%A4%89%E3%81%88%E3%82%8B.html">棚 色 を 変える</a>
+											<a class="badge badge-dark" href="/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%9E%E3%83%BC%E3%82%AFii-cm.html">コロナマークii cm</a>
+											<a class="badge badge-secondary" href="/amazon-echo-%E8%89%B2-%E4%BA%BA%E6%B0%97.html">amazon echo 色 人気</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.7b.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.7b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCCWDl73eCV0BY0wY9ehMavwNGeTSU_zwr8ei1M2u5OfZMyS2Le83c1yZx8-z-h-b5hE8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.10d.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d2">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.10d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5EZkN1UbP7Z3og6-TLHuMdB0jjAV9f7FcSDyV8MosUzZQ2YZjW1nl_CC9oEqLlKa6-ng';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://graph.pc-physics.com/image/threedimensions22.png" data-lightbox="roadtrip" data-title="3次元グラフを色を用いて2次元平面で表現">
+						<img class="card-img" src="http://graph.pc-physics.com/image/threedimensions22.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbVGjqvsqDGf_b0xK7BZihu0fz92RXXfi92Ow1eke6mOyYvv0KtIFxHvNgf91R1gwets';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフを色を用いて2次元平面で表現
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://graph.pc-physics.com/image/threedimensions21.png" data-lightbox="roadtrip" data-title="3次元グラフを色を用いて2次元平面で表現">
+						<img class="card-img" src="http://graph.pc-physics.com/image/threedimensions21.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpKnz7PWOXpHqcXXa1djpW_rZAdIK5t6F46kpMrW10geSb7q8mSmd7Mhn4vZVWCxnGedo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフを色を用いて2次元平面で表現
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_001.png" data-lightbox="roadtrip" data-title="3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_001.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS4Ftq_qC2QFrLXDWaOrQSZwz4FF3JcpielwUY8xGEOyl6YnSuuq1hA_rlaBatg1Qq0Js';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.8a.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.8a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnyZmtYJwZVNSHtCS4fihLRjZ7gYkQL5MPYLec3ip6fZlJyZPzGQc48rNqRUAbel4Iho';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="http://graph.pc-physics.com/image/threedimensions31.png" data-lightbox="roadtrip" data-title="3次元グラフのxy平面で数値の高低を色で表現">
+						<img class="card-img" src="http://graph.pc-physics.com/image/threedimensions31.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvnUjgwuTu_Jx_RR0OpVA5t0xO5W6eXxJJIulsmmQhoZjXM4rkwUZaIi2WBXdPe2UzsU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフのxy平面で数値の高低を色で表現
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.10b.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d2">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.10b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNK30wBt2vuYEYIG8FM0dYy4YoNP0FLreZFFU-Zd6U07FzdbPX4kbIY5PN4KKNo8d_1qc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.8b.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.8b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_HCDTHDOPe7GyROtAXitHLk1gin7itbX97ZPkaopPiJhOJMPhRP6XwTJC78c7_nQmvsE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sci-tech.ksc.kwansei.ac.jp/~osaki/students/img/sin_sin_3d_pm3d.png" data-lightbox="roadtrip" data-title="3dプロット">
+						<img class="card-img" src="https://sci-tech.ksc.kwansei.ac.jp/~osaki/students/img/sin_sin_3d_pm3d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFGEOs5akPLqnBi51Tq2xMU7DIEncdREq46vQWGUfUA0wCxlFIWIE1MQA9EIW2kdgBmg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3dプロット
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://photos1.blogger.com/x/blogger/4624/658/1600/627669/gnuplot_colorline.png" data-lightbox="roadtrip" data-title="Karuraの日記 Gnuplot 4 2">
+						<img class="card-img" src="http://photos1.blogger.com/x/blogger/4624/658/1600/627669/gnuplot_colorline.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPNJ7ltmROipqAjBCYl-vhci3nIimUWwb80mAU10pnzjs5nD-b_hT7f886j3Y8Np8mhQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Karuraの日記 Gnuplot 4 2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blog-imgs-33.fc2.com/a/c/t/activecontour/surf_colorbar.jpg" data-lightbox="roadtrip" data-title="趣味memo Gnuplot 三次元グラフ">
+						<img class="card-img" src="http://blog-imgs-33.fc2.com/a/c/t/activecontour/surf_colorbar.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhfn5eD_Ctaw8MTxYOqkV3WTVZtLfiujdFX7zoJbd_4qtyfPvxbcQb6MFYxCBftU-J_qM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				趣味memo Gnuplot 三次元グラフ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://graph.pc-physics.com/image/threedimensions2.png" data-lightbox="roadtrip" data-title="3次元でグラフをプロット">
+						<img class="card-img" src="http://graph.pc-physics.com/image/threedimensions2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QmBAmZj-R9jdvSEfWke7nvO3ka_px8Md6U1RjIbhxpOEkWjfv7fP_k7aLN2JS39u6i4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元でグラフをプロット
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sci-tech.ksc.kwansei.ac.jp/~osaki/students/img/sin_sin_3d_map.png" data-lightbox="roadtrip" data-title="3dプロット">
+						<img class="card-img" src="https://sci-tech.ksc.kwansei.ac.jp/~osaki/students/img/sin_sin_3d_map.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nVtSd7mP49IWuTZ5XwdJNSRREha4zZI1bae-utG9FT4YmY1G8Qxfyejn5w6gcoYGjI0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3dプロット
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.10a.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d2">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.10a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdmsVAhSYoYxjRg-0EHj_H0dch9auv2TMAV-NSyIhBLehG-iZjWiFWZ06cREvUNblTW4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_004.png" data-lightbox="roadtrip" data-title="3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_004.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD3TrVOmMwQmF9PquWXKwIxKM0KQ-sV3rgxnBe-ufb4IMC7prvR8EePbMz5e7ssZnPBLI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.10c.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d2">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.10c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSzOkwnc1SO4gJT2jwqLxM1JcjbwQpsyekaO6wxiJvxH3M0jM_strr_F-ZCyZYgoctkKU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_003.png" data-lightbox="roadtrip" data-title="3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_003.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjlnroc0aMG_4k4EbFmZlcoAcCk9iSX50tB44QXDoDDwS0HISAMaeT29rClNktdioXGk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://pico.dreamhosters.com/raddata/ja/2011_spector_all/oono-2011-03-14-22.png" data-lightbox="roadtrip" data-title="Pico Tech Gnuplot Memo3d">
+						<img class="card-img" src="http://pico.dreamhosters.com/raddata/ja/2011_spector_all/oono-2011-03-14-22.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbp2hJ5-45ikv7_BTCUicYddkeQqwOYsh1TcfE274wFJmaYcQ3yqtQWObtrCCLHuBUy4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pico Tech Gnuplot Memo3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.6b.png" data-lightbox="roadtrip" data-title="Gnuplot Plot3d 2">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.6b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZUUtDt7HCLospGUM6EqsUVQoD8ginapw1J1uWv6hMeZevC7muGA37U28eYfx36KRleI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plot3d 2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www-ise2.ist.osaka-u.ac.jp/~shinkai/image/gnuplot/DTMap_5_1st.png" data-lightbox="roadtrip" data-title="タイトル未定 Gnuplot">
+						<img class="card-img" src="http://www-ise2.ist.osaka-u.ac.jp/~shinkai/image/gnuplot/DTMap_5_1st.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1szUOonUwS9LkcjHBLsNvob6f30c0E84bkg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				タイトル未定 Gnuplot
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/color_jet_white.png" data-lightbox="roadtrip" data-title="Gnuplotのカラーマップ シキノート">
+						<img class="card-img" src="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/color_jet_white.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQml8JcjYCl1qJ-vKRJDtI5kdoWAtHvmQvq5w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotのカラーマップ シキノート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://takeno.iee.niit.ac.jp/~shige/unix/gnuplot/data/pm3dmap-t3.gif" data-lightbox="roadtrip" data-title="Info And Memo For Gnuplot 2009">
+						<img class="card-img" src="http://takeno.iee.niit.ac.jp/~shige/unix/gnuplot/data/pm3dmap-t3.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJJGfTxN2-GT0Db0HtKgyMrl34VMldnjDyg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Info And Memo For Gnuplot 2009
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/12/gnuplotangle_eye_c-1038x519.jpg" data-lightbox="roadtrip" data-title="角度に依存して色を付ける Gnuplot シキノート">
+						<img class="card-img" src="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/12/gnuplotangle_eye_c-1038x519.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IEA3B-aLfLy5IPuzTUuDofgnRkqXLbM8LA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				角度に依存して色を付ける Gnuplot シキノート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://pico.dreamhosters.com/raddata/ja/2011_spector_all/kooriyama-test2.png" data-lightbox="roadtrip" data-title="Pico Tech Gnuplot Memo3d">
+						<img class="card-img" src="http://pico.dreamhosters.com/raddata/ja/2011_spector_all/kooriyama-test2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8t2m6vJ7AfETqjBlRa2N4aOm8McQxllyn9g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pico Tech Gnuplot Memo3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.proton.jp/main/apps/image/gnuplot/gnuplot01.png" data-lightbox="roadtrip" data-title="Proton Jp Gnuplotのグラフを調節するには">
+						<img class="card-img" src="http://www.proton.jp/main/apps/image/gnuplot/gnuplot01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLllToHImHNEhjMLGZiJ9oi6D3PMOSXgytVQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Proton Jp Gnuplotのグラフを調節するには
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/overview.png" data-lightbox="roadtrip" data-title="Gnuplotのカラーマップ シキノート">
+						<img class="card-img" src="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/overview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSInE3T-DnQqQS5A6yeuqJ2L5L_vOuwyP878Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotのカラーマップ シキノート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.natural-science.or.jp/images/20120105-i5.gif" data-lightbox="roadtrip" data-title="Gnuplot ３次元カラーマップで補間 Interpolate">
+						<img class="card-img" src="http://www.natural-science.or.jp/images/20120105-i5.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnlI9VpFHrihj_An2klA_LlZrGhXfvuoWHXg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot ３次元カラーマップで補間 Interpolate
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://lowrank.net/gnuplot/fig/sample6.9.png" data-lightbox="roadtrip" data-title="Gnuplot Plotpm3d">
+						<img class="card-img" src="http://lowrank.net/gnuplot/fig/sample6.9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk4WMEljmZRGelk91n9noDZFHUwY2uv7ZIYA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplot Plotpm3d
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_005.png" data-lightbox="roadtrip" data-title="3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ">
+						<img class="card-img" src="https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/img/3D_surface_005.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1qSBg5aqQCjEWv-pc9koW_9nUrOI0Fh5yUw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3次元グラフ表面の立体的に見える色づけ 米澤進吾 ホームページ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/eye_gnuplot_c.jpg" data-lightbox="roadtrip" data-title="Gnuplotのカラーマップ シキノート">
+						<img class="card-img" src="https://slpr.sakura.ne.jp/qp/wp-content/uploads/2015/05/eye_gnuplot_c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjVrS1d5s1CEi0eZjSZv3GuAOtQIH8soLBQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Gnuplotのカラーマップ シキノート
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sci-tech.ksc.kwansei.ac.jp/~osaki/students/img/sin_sin_3d_iso.png" data-lightbox="roadtrip" data-title="3dプロット">
+						<img class="card-img" src="https://sci-tech.ksc.kwansei.ac.jp/~osaki/students/img/sin_sin_3d_iso.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrRx8efmUzZXE5_2liXrSJqKuGxDt0ER1ROQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3dプロット
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F238983%2F9302fdd5-9a66-9ca9-ed38-bd3e3986ec14.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=712e4254edc135f6d863533556f1c03b" data-lightbox="roadtrip" data-title="綺麗な三次元バンド図をgnuplotで作る Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F238983%2F9302fdd5-9a66-9ca9-ed38-bd3e3986ec14.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=712e4254edc135f6d863533556f1c03b" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3m2BNbGRPqqQZtzlsDrs3-cmg3GCyOf608A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				綺麗な三次元バンド図をgnuplotで作る Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>

@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://teratail.storage.googleapis.com/uploads/contributed_images/f0a7af86ec267336f04fdd6d67ae8512.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Opencv 特定の色 着色</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Opencv 特定の色 着色",
+  "datePublished": "2021-04-30",
+  "image": [https://raw.githubusercontent.com/nkmk/python-snippets/master/notebook/data/dst/lena_numpy_split_color.jpg,https://cdn-ak.f.st-hatena.com/images/fotolife/r/rikoubou/20190221/20190221185739.png,https://algorithm.joho.info/wp-content/uploads/2019/09/graph.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=opencv 特定の色 着色",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Opencv 特定の色 着色</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-danger" href="/%E3%82%B3%E3%83%AD%E3%83%8A%E7%9F%B3%E6%B2%B9%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96-%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E6%B6%88%E7%81%AB.html">コロナ石油ストーブ スピード消火</a>
+											<a class="badge badge-danger" href="/%E6%B5%B4%E8%A1%A3-%E4%BC%BC%E5%90%88%E3%81%86-%E8%89%B2-%E9%81%B8%E3%81%B3%E6%96%B9.html">浴衣 似合う 色 選び方</a>
+											<a class="badge badge-success" href="/%E3%82%A2%E3%82%A4-%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6-2-%E8%89%B2-%E3%82%B0%E3%83%A9%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">アイ シャドウ 2 色 グラデーション</a>
+											<a class="badge badge-danger" href="/%E9%BB%92-%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3-%E8%89%B2-%E5%A1%97%E3%82%8A.html">黒 ボールペン 色 塗り</a>
+											<a class="badge badge-dark" href="/%E7%9F%AD%E9%AB%AA-%E4%BC%BC%E5%90%88%E3%81%86-%E9%AB%AA-%E8%89%B2.html">短髪 似合う 髪 色</a>
+											<a class="badge badge-secondary" href="/2-%E8%89%B2-%E5%8D%B0%E5%88%B7-%E6%96%99%E9%87%91.html">2 色 印刷 料金</a>
+											<a class="badge badge-dark" href="/%E3%83%94%E3%83%B3%E3%82%AF-%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89-%E8%89%B2-%E3%82%81%E3%81%A3%E3%81%8D.html">ピンク ゴールド 色 めっき</a>
+											<a class="badge badge-dark" href="/%E9%9D%99%E5%B2%A1%E5%B8%82-%E5%B0%8F%E5%AD%A6%E6%A0%A1-%E5%AF%BE%E5%BF%9C-%E3%82%B3%E3%83%AD%E3%83%8A.html">静岡市 小学校 対応 コロナ</a>
+											<a class="badge badge-dark" href="/%E4%B8%96%E7%95%8C%E3%81%AE%E3%82%B3%E3%83%AD%E3%83%8A%E7%8A%B6%E6%B3%81.html">世界のコロナ状況</a>
+											<a class="badge badge-light" href="/%E5%85%A5%E6%B5%B4-%E5%89%A4-%E6%B5%B4%E6%A7%BD-%E8%89%B2-%E7%A7%BB%E3%82%8A.html">入浴 剤 浴槽 色 移り</a>
+											<a class="badge badge-light" href="/%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E5%A4%A7%E9%98%AA%E3%83%A9%E3%82%A4%E3%83%96%E3%83%8F%E3%82%A6%E3%82%B9.html">新型コロナ大阪ライブハウス</a>
+											<a class="badge badge-dark" href="/%E3%82%B3%E3%83%AD%E3%83%8A%E7%9F%B3%E6%B2%B9%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96-%E7%82%B9%E6%A4%9C-%E6%9C%AD%E5%B9%8C.html">コロナ石油ストーブ 点検 札幌</a>
+											<a class="badge badge-warning" href="/%E5%A6%96%E6%80%AA-%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81-2-qr-%E3%82%B3%E3%83%BC%E3%83%89-%E8%89%B2-%E3%82%B3%E3%82%A4%E3%83%B3.html">妖怪 ウォッチ 2 qr コード 色 コイン</a>
+											<a class="badge badge-danger" href="/%E4%B8%8B%E7%9D%80-%E8%89%B2-%E9%80%8F%E3%81%91-%E3%81%AA%E3%81%84.html">下着 色 透け ない</a>
+											<a class="badge badge-info" href="/%E3%81%8A-%E5%AE%AE%E5%8F%82%E3%82%8A-%E9%9D%B4-%E8%89%B2.html">お 宮参り 靴 色</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/r/rikoubou/20190221/20190221185338.png" data-lightbox="roadtrip" data-title="Python Opencv 画像の特定の色を抽出する方法 ソースに絡まるエスカルゴ">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/r/rikoubou/20190221/20190221185338.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUH8JKlRHp4hUL6xxS9Dg8akK71o-MP-4mphhkO66On3rFR6kbPaX57b_t7i-d4rUIX8s';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencv 画像の特定の色を抽出する方法 ソースに絡まるエスカルゴ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitakantech.com/wp-content/uploads/2019/06/ginger_redmask.png" data-lightbox="roadtrip" data-title="Opencv実験python3 特定の色の抜き出し 北館テック Com">
+						<img class="card-img" src="https://kitakantech.com/wp-content/uploads/2019/06/ginger_redmask.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5WfQDj0j-W_JEtU9quml85ATGxwUNyebNgQVgu8K3D8V5gzMQx5lrQ-2Ac_YFPcp1Mw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencv実験python3 特定の色の抜き出し 北館テック Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/r/rikoubou/20190221/20190221185739.png" data-lightbox="roadtrip" data-title="Python Opencv 画像の特定の色を抽出する方法 ソースに絡まるエスカルゴ">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/r/rikoubou/20190221/20190221185739.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZdL1HltlekZRYFRf5jg9LBXG73RfWp1ou8CsvxhUmHOjDWNfV-vmYat1MzfEyhXycZoY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencv 画像の特定の色を抽出する方法 ソースに絡まるエスカルゴ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://tecsingularity.com/wp-content/uploads/2018/01/hsv.jpg" data-lightbox="roadtrip" data-title="Opencvによる特定色画素の抽出 Rgb Vs Hsv 技術的特異点">
+						<img class="card-img" src="http://tecsingularity.com/wp-content/uploads/2018/01/hsv.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKd8fYE5Uw8ZhADZMH-I786t_7NOy_JGJm1nW-O3sBifOQKtu0XJh5I4Fc2x1Df6PSlM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvによる特定色画素の抽出 Rgb Vs Hsv 技術的特異点
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://teratail.storage.googleapis.com/uploads/contributed_images/f0a7af86ec267336f04fdd6d67ae8512.png" data-lightbox="roadtrip" data-title="Opencv Python３ Opencvで 特定色の箇所を白い線で囲いたい Teratail">
+						<img class="card-img" src="https://teratail.storage.googleapis.com/uploads/contributed_images/f0a7af86ec267336f04fdd6d67ae8512.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPP-GU43JLu3e3Eeu2F0i0yEwtmcYyZw3BXlps1wUtUwT1c-leRe9AIYUAzd5qtaThLk8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencv Python３ Opencvで 特定色の箇所を白い線で囲いたい Teratail
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitakantech.com/wp-content/uploads/2019/06/ginger-1.png" data-lightbox="roadtrip" data-title="Opencv実験python3 特定の色の抜き出し 北館テック Com">
+						<img class="card-img" src="https://kitakantech.com/wp-content/uploads/2019/06/ginger-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNp9I4mpNGpJUzDGtLQFf51vKerVPFwdDYIGr4q61o2_THbCQpKf6DzxwSs_-kNB3Q_o0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencv実験python3 特定の色の抜き出し 北館テック Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/T/T_A_T/20190524/20190524203310.jpg" data-lightbox="roadtrip" data-title="特定の色を別の色に変換する 赤い服を緑の服に変える Pythonでいろいろやってみる">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/T/T_A_T/20190524/20190524203310.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZz2h3DvRFiRKEP0wqt6wN5RB8f_X6lNZEPLz4YZNKEPr8RBaAFeMApw5QN50tMX6HGg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				特定の色を別の色に変換する 赤い服を緑の服に変える Pythonでいろいろやってみる
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/1bca4360a9c375874f8fe74cef1f1bb3.png" data-lightbox="roadtrip" data-title="Python Opencvである特定の色以外を抽出する方法 Teratail">
+						<img class="card-img" src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/1bca4360a9c375874f8fe74cef1f1bb3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGiu0jAYhyYVqpjE5Qsiu_PFJt3gCtQ4iFkHLeQ-EBgzmiRY1MKhS3TNcD2wgCu0YAsTo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencvである特定の色以外を抽出する方法 Teratail
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.qoosky.io/images/716/content" data-lightbox="roadtrip" data-title="画像から特定の色の領域を抜き出す Opencv3 C Qoosky">
+						<img class="card-img" src="https://www.qoosky.io/images/716/content" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuoFsnxkNrbMio1pxEN1PTOo7zW7dfBN18HlhzXkghgqVSsy6eF11838icn_SW0lMSzY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像から特定の色の領域を抜き出す Opencv3 C Qoosky
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://1.bp.blogspot.com/-S5ALQ5d_JrQ/UqSoWaZokRI/AAAAAAAAAQ0/yM5rSAQ49MQ/s1600/tomato.jpg" data-lightbox="roadtrip" data-title="Opencv Pythonのopencvで特定の色の画像を判別 Yura Yuwrite">
+						<img class="card-img" src="http://1.bp.blogspot.com/-S5ALQ5d_JrQ/UqSoWaZokRI/AAAAAAAAAQ0/yM5rSAQ49MQ/s1600/tomato.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxSMkkG0oFozuf1ECWsZQxL0_O5NRi1axkbk0QTLdQrxa8ctqu_pMebPeExHT6C8fwlI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencv Pythonのopencvで特定の色の画像を判別 Yura Yuwrite
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.qoosky.io/images/715/content" data-lightbox="roadtrip" data-title="画像から特定の色の領域を抜き出す Opencv3 C Qoosky">
+						<img class="card-img" src="https://www.qoosky.io/images/715/content" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPqUggwGP4pE8T2n0FNFHKvoQikWz65-3z0I413BxZLmyNEZmOcvXAs47huOeZVTzAqg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像から特定の色の領域を抜き出す Opencv3 C Qoosky
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/p/portaltan/20181101/20181101175037.jpg" data-lightbox="roadtrip" data-title="Opencvとpythonで色抽出 脳汁portal">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/portaltan/20181101/20181101175037.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACKY-8AX7lqWNji_kab6LU3qQUeUeVrKLEBY4nf1KkwS5C0nfseylCRnmTJeaMPGlqLw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvとpythonで色抽出 脳汁portal
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F256470%2F2788ba2c-019c-d41e-9128-2105369c8850.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=e06a4b5cf69826a52d7ae06b0ba5c2e6" data-lightbox="roadtrip" data-title="色検出プログラム Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F256470%2F2788ba2c-019c-d41e-9128-2105369c8850.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=e06a4b5cf69826a52d7ae06b0ba5c2e6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJyXw2tt5PsM8mko4qBqnYNQvAmRGd0vLwb-wvQClBjGPgsuyVBsT2RnEeKg8A2cwP0Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				色検出プログラム Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.qoosky.io/images/714/content" data-lightbox="roadtrip" data-title="画像から特定の色の領域を抜き出す Opencv3 C Qoosky">
+						<img class="card-img" src="https://www.qoosky.io/images/714/content" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvzWS8UBeMnRv_RaJmBx5JpgeEWihtrUJU_yCmhfZWvy-f8W6lgEyGwphqQqemmA8RzTg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像から特定の色の領域を抜き出す Opencv3 C Qoosky
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://tecsingularity.com/wp-content/uploads/2018/01/output_rgb.jpg" data-lightbox="roadtrip" data-title="Opencvによる特定色画素の抽出 Rgb Vs Hsv 技術的特異点">
+						<img class="card-img" src="http://tecsingularity.com/wp-content/uploads/2018/01/output_rgb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzgXwH4hPTfK6E76TzdvMtH0JvBonObFgJqD-apiUfWvol8HlCxIXMVHQFhZTd8CCPVk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvによる特定色画素の抽出 Rgb Vs Hsv 技術的特異点
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/p/portaltan/20181101/20181101174632.jpg" data-lightbox="roadtrip" data-title="Opencvとpythonで色抽出 脳汁portal">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/portaltan/20181101/20181101174632.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGRDSG6Ys2RLIeZpN0e53-2Ow46CeuE7IAhoEUjHetbkNOm763rh38j01Je5J6rEhHZsg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvとpythonで色抽出 脳汁portal
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i0.wp.com/www.blog.umentu.work/wp-content/uploads/2015/08/7576eac6b230046253585fa180101b86.png?ssl=1" data-lightbox="roadtrip" data-title="Python3 Opencv3で指定した色のみを抽出して表示する 動画あり From Umentu Import Stupid">
+						<img class="card-img" src="https://i0.wp.com/www.blog.umentu.work/wp-content/uploads/2015/08/7576eac6b230046253585fa180101b86.png?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEec4nFq3chis-vzHtcbedY2y5lnVHbCBGwKMtD6C6w-k1jFasIYN-4FSueVScQZmcBLA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python3 Opencv3で指定した色のみを抽出して表示する 動画あり From Umentu Import Stupid
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.qoosky.io/images/713/content" data-lightbox="roadtrip" data-title="画像から特定の色の領域を抜き出す Opencv3 C Qoosky">
+						<img class="card-img" src="https://www.qoosky.io/images/713/content" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXmdUbIgTSVS4gVXjCrqeNULLQHg4pam0Vow16x8OC1GZIEOGii0TLoDPrBRykYkxHz48';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像から特定の色の領域を抜き出す Opencv3 C Qoosky
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/20BEW.jpg" data-lightbox="roadtrip" data-title="画像から特定の色を抽出したい スタック オーバーフロー">
+						<img class="card-img" src="https://i.stack.imgur.com/20BEW.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTju8XGW8vVHWFhwbe5Cddlqq6bZDWWcrQKAyLfynF4lbMJlxB8Ypi2lkvT5tWGP5pmm0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像から特定の色を抽出したい スタック オーバーフロー
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/s/sd08419ttic/20190331/20190331220930.png" data-lightbox="roadtrip" data-title="画像認識 テンプレートマッチング 色に基づく物体認識 エッジ形状に基づく形状認識 Techno Memo">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/sd08419ttic/20190331/20190331220930.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6NUODn_95zZdWKxBlAupURRaS-d4H3NleUI3_9k8RJWdqk0zOOJvkNsMLrQ8D3j6gavg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像認識 テンプレートマッチング 色に基づく物体認識 エッジ形状に基づく形状認識 Techno Memo
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://algorithm.joho.info/wp-content/uploads/2019/09/graph.png" data-lightbox="roadtrip" data-title="Python Opencv カラートラッキング 色追跡 で移動物体の検出 西住工房">
+						<img class="card-img" src="https://algorithm.joho.info/wp-content/uploads/2019/09/graph.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCb6ndIt5y8TdDtBhdq3bGAWNGR1hq6R-1VQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencv カラートラッキング 色追跡 で移動物体の検出 西住工房
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://tecsingularity.com/wp-content/uploads/2018/01/input-300x225.jpg" data-lightbox="roadtrip" data-title="Opencvによる特定色画素の抽出 Rgb Vs Hsv 技術的特異点">
+						<img class="card-img" src="http://tecsingularity.com/wp-content/uploads/2018/01/input-300x225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbkNas18rqCxDyLoP0vUrFrnrZs5y-Aaf4Sw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvによる特定色画素の抽出 Rgb Vs Hsv 技術的特異点
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F256470%2Ffbe2b2ac-44ba-9195-acd9-b36f7eed6d90.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=4056058c2f47ef30664327a49bce3282" data-lightbox="roadtrip" data-title="色検出プログラム Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F256470%2Ffbe2b2ac-44ba-9195-acd9-b36f7eed6d90.png?ixlib=rb-4.0.0&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=4056058c2f47ef30664327a49bce3282" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpfmgG3mT0nm7frOZQxn8aK0wmAIpShnai7g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				色検出プログラム Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/ZiQcY.png" data-lightbox="roadtrip" data-title="Python Opencvを使用して特定の色の円を検出する Itツールウェブ">
+						<img class="card-img" src="https://i.stack.imgur.com/ZiQcY.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsvs7ecqu02QQoEwyUq58KcymVW4pZVQjRUw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencvを使用して特定の色の円を検出する Itツールウェブ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i1.wp.com/tomomai.com/wp-content/uploads/2020/03/grb.jpg?resize=475%2C475&amp;ssl=1" data-lightbox="roadtrip" data-title="Pythonで画像の色を分解 結合する方法 Opencvとnumpyの使い方を解説 Tomoblog">
+						<img class="card-img" src="https://i1.wp.com/tomomai.com/wp-content/uploads/2020/03/grb.jpg?resize=475%2C475&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGv_mZmbOmf09adCnXuBzRLvLtiyBpmQe63A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Pythonで画像の色を分解 結合する方法 Opencvとnumpyの使い方を解説 Tomoblog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E8%2589%25B2%25E6%25A4%259C%25E5%2587%25BA%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25A0%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D79b96eb0e018fc90e19ff913bda9918c&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540hsgucci%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D656b3881fb204374d2a6100b92efbf12&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=aca68b83bbdf8f8e7ef36d1439b1556e" data-lightbox="roadtrip" data-title="色検出プログラム Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E8%2589%25B2%25E6%25A4%259C%25E5%2587%25BA%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25A0%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D79b96eb0e018fc90e19ff913bda9918c&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540hsgucci%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D656b3881fb204374d2a6100b92efbf12&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=aca68b83bbdf8f8e7ef36d1439b1556e" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5-03T5OP9DvvGQvbpFtZpNFf56yNRQ2CBA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				色検出プログラム Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://watlab-blog.com/wp-content/uploads/2020/03/ec-rgba-img-304x160.png" data-lightbox="roadtrip" data-title="Python Opencvで任意色を透過させたpng画像に変換 Watlab Python 信号処理 Ai">
+						<img class="card-img" src="https://watlab-blog.com/wp-content/uploads/2020/03/ec-rgba-img-304x160.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRervucHra9WpryS976m6gQpbPKml5X-e5ZcA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencvで任意色を透過させたpng画像に変換 Watlab Python 信号処理 Ai
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://temari.co.jp/blog/wp-content/uploads/2017/11/20171113_1.jpg" data-lightbox="roadtrip" data-title="Opencvで色抽出 白 てまりのユニバーサルデザイン">
+						<img class="card-img" src="https://temari.co.jp/blog/wp-content/uploads/2017/11/20171113_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQGX66dNdQM_1oQ5e_fR3GhW2QWX6WXVwHA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvで色抽出 白 てまりのユニバーサルデザイン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/nkmk/python-snippets/master/notebook/data/dst/lena_numpy_split_color.jpg" data-lightbox="roadtrip" data-title="Numpyでrgb画像の色チャンネルを分離して単色化 白黒化 色交換 Note Nkmk Me">
+						<img class="card-img" src="https://raw.githubusercontent.com/nkmk/python-snippets/master/notebook/data/dst/lena_numpy_split_color.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6FFP9cjb-ftoeARYSgWY5K7crcPJxFyG_yg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Numpyでrgb画像の色チャンネルを分離して単色化 白黒化 色交換 Note Nkmk Me
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/sQZLsV8K0IA/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Python Opencv カラートラッキング 色追跡 で移動物体の検出 西住工房">
+						<img class="card-img" src="https://i.ytimg.com/vi/sQZLsV8K0IA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_novGauvgGnnhwjfy4jeMrau6YAXQfGC1Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencv カラートラッキング 色追跡 で移動物体の検出 西住工房
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://watlab-blog.com/wp-content/uploads/2020/03/transparent-img-color.png" data-lightbox="roadtrip" data-title="Python Opencvで任意色を透過させたpng画像に変換 Watlab Python 信号処理 Ai">
+						<img class="card-img" src="https://watlab-blog.com/wp-content/uploads/2020/03/transparent-img-color.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1y6oDOrhwHOQ4RLVqGfbiVr3drR2EWGVkA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Python Opencvで任意色を透過させたpng画像に変換 Watlab Python 信号処理 Ai
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kivantium/20140916/20140916180418.png" data-lightbox="roadtrip" data-title="Opencvで特定色領域の抽出 Kivantium活動日記">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/kivantium/20140916/20140916180418.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUvpjO61nR3P0M5yRecfqRfnnEpepdFwqdw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencvで特定色領域の抽出 Kivantium活動日記
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.soymilk.fun/2020/11/18/OpenCV/OpenCVPythonColorDetect/hsv_color.png" data-lightbox="roadtrip" data-title="Opencv Python 颜色检测 Soymilk">
+						<img class="card-img" src="https://blog.soymilk.fun/2020/11/18/OpenCV/OpenCVPythonColorDetect/hsv_color.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRi23ikpzvP8s_ZaOI0zJlUbQ-mVivI1nhA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Opencv Python 颜色检测 Soymilk
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>

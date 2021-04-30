@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DHTML%2520%25E3%2581%25AE%2520%25E6%2596%2587%25E7%25AB%25A0%2520%25E3%2581%25AE%2520%25E4%25B8%2580%25E9%2583%25A8%25E3%2581%25A0%25E3%2581%2591%2520%25E6%2596%2587%25E5%25AD%2597%25E3%2581%25AE%25E8%2589%25B2%25E3%2582%2592%2520%25E5%25A4%2589%25E6%259B%25B4%25E3%2581%2599%25E3%2582%258B%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D4e5e072a5eeb545ee50a27e7f05aae96&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540miriwo%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da5b017cddd007d7983df85f8086a550a&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=773a2095963c4c26fd89e8e1533f2521
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Css 文字 の 色 変更</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Css 文字 の 色 変更",
+  "datePublished": "2021-04-30",
+  "image": [https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DHTML%2520%25E3%2581%25AE%2520%25E6%2596%2587%25E7%25AB%25A0%2520%25E3%2581%25AE%2520%25E4%25B8%2580%25E9%2583%25A8%25E3%2581%25A0%25E3%2581%2591%2520%25E6%2596%2587%25E5%25AD%2597%25E3%2581%25AE%25E8%2589%25B2%25E3%2582%2592%2520%25E5%25A4%2589%25E6%259B%25B4%25E3%2581%2599%25E3%2582%258B%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D4e5e072a5eeb545ee50a27e7f05aae96&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540miriwo%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da5b017cddd007d7983df85f8086a550a&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=773a2095963c4c26fd89e8e1533f2521,https://uguisu.skr.jp/html/lib/link_2.gif,https://tech-dig.jp/wp/wp-content/uploads/2018/11/change-color.jpg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=css 文字 の 色 変更",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Css 文字 の 色 変更</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-info" href="/%E3%82%A2%E3%82%A4-%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6-%E4%BD%BF%E3%82%8F-%E3%81%AA%E3%81%84-%E8%89%B2.html">アイ シャドウ 使わ ない 色</a>
+											<a class="badge badge-success" href="/%E9%A2%A8%E6%B0%B4-%E5%A3%81%E6%8E%9B%E3%81%91-%E6%99%82%E8%A8%88-%E8%89%B2.html">風水 壁掛け 時計 色</a>
+											<a class="badge badge-warning" href="/%E9%80%81%E9%9B%BB%E7%B7%9A%E8%B7%AF%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6%E7%94%9F%E3%81%9A%E3%82%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%81%A8%E3%81%9D%E3%81%AE%E5%BD%B1%E9%9F%BF.html">送電線路において生ずるコロナとその影響</a>
+											<a class="badge badge-dark" href="/ipad-pro-105-%E8%89%B2-%E4%BA%BA%E6%B0%97.html">ipad pro 105 色 人気</a>
+											<a class="badge badge-light" href="/%E6%BA%B6%E6%8E%A5-%E6%A3%92-%E8%AD%98%E5%88%A5-%E8%89%B2.html">溶接 棒 識別 色</a>
+											<a class="badge badge-dark" href="/%E3%83%A9%E3%82%B7%E3%83%A3-%E3%82%B9%E3%83%AA%E3%83%83%E3%83%97%E3%82%B9-%E4%BA%BA%E6%B0%97-%E8%89%B2-%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0.html">ラシャ スリップス 人気 色 ランキング</a>
+											<a class="badge badge-warning" href="/%E7%9F%B3-%E3%81%AE-%E8%89%B2-%E3%81%8C-%E5%A4%89%E3%82%8F%E3%82%8B.html">石 の 色 が 変わる</a>
+											<a class="badge badge-warning" href="/lamy-2016-%E9%99%90%E5%AE%9A-%E8%89%B2.html">lamy 2016 限定 色</a>
+											<a class="badge badge-dark" href="/%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB-%E8%89%B2-%E3%82%92-%E5%A1%97%E3%82%8B.html">エクセル 色 を 塗る</a>
+											<a class="badge badge-danger" href="/%E6%BF%83%E7%B4%BA-%E3%81%AB-%E5%90%88%E3%81%86-%E8%89%B2.html">濃紺 に 合う 色</a>
+											<a class="badge badge-secondary" href="/%E8%89%B2%E7%99%BD-%E9%AB%AA-%E8%89%B2-%E5%B0%8F-%E9%A1%94.html">色白 髪 色 小 顔</a>
+											<a class="badge badge-secondary" href="/%E6%B5%B7-%E8%89%B2-%E3%81%AE-%E9%A2%A8-%E9%AB%98%E6%A9%8B-%E7%9C%9F%E6%A2%A8%E5%AD%90.html">海 色 の 風 高橋 真梨子</a>
+											<a class="badge badge-dark" href="/%E4%BA%94%E8%89%B2-%E3%81%AE-%E8%89%B2-%E3%81%AE-%E6%84%8F%E5%91%B3.html">五色 の 色 の 意味</a>
+											<a class="badge badge-danger" href="/%E8%89%B2-%E7%94%BB%E7%94%A8%E7%B4%99-%E5%80%A4%E6%AE%B5-%E5%9B%9B-%E3%81%A4-%E5%88%87%E3%82%8A.html">色 画用紙 値段 四 つ 切り</a>
+											<a class="badge badge-danger" href="/%E3%82%B5%E3%83%B3%E3%83%9D%E3%83%83%E3%83%88%E3%81%AE%E5%BA%8A%E6%9A%96%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96%E3%81%AB%E3%82%B3%E3%83%AD%E3%83%8A%E3%81%AE.html">サンポットの床暖ストーブにコロナの</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://proengineer.internous.co.jp/topics/wp-content/uploads/2016/08/css_color3.png" data-lightbox="roadtrip" data-title="Css入門 文字色の指定方法 サービス プロエンジニア">
+						<img class="card-img" src="https://proengineer.internous.co.jp/topics/wp-content/uploads/2016/08/css_color3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYe7VUFdpamxQNYSPtzgZ56nBmrwthFWmiGXymwHKEng0ASmjA950wfdqqOOfEdiKNdS0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Css入門 文字色の指定方法 サービス プロエンジニア
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/4/3/7/9/3/7/201907171131/2.png" data-lightbox="roadtrip" data-title="1文字ずつ文字色を変える 文字単位でのcss適用方法 ホームページ作成 All About">
+						<img class="card-img" src="https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/4/3/7/9/3/7/201907171131/2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmriNNi2vHD4ipysBVr2NouzcfYOAcEuMzvTyW_vlV_njEOeXyvCQglg9_dlZYoDlLas';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				1文字ずつ文字色を変える 文字単位でのcss適用方法 ホームページ作成 All About
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kamuiblog.com/wp-content/uploads/2019/02/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2019-02-11-17.24.33.png" data-lightbox="roadtrip" data-title="Cssで文字色をつける方法とコードを紹介 Chamlog">
+						<img class="card-img" src="https://kamuiblog.com/wp-content/uploads/2019/02/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2019-02-11-17.24.33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3ZIDugwvbHpm17zxnj8LWEg7K0ranw--KKMy-tHOT1gg5JMaBLbe74kNdfoa8SmdVMg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssで文字色をつける方法とコードを紹介 Chamlog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/4/3/7/9/3/7/201907171133/3.png" data-lightbox="roadtrip" data-title="1文字ずつ文字色を変える 文字単位でのcss適用方法 ホームページ作成 All About">
+						<img class="card-img" src="https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/4/3/7/9/3/7/201907171133/3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2UzvypWqtIi5Grpkdmls0zwRVuN0i6YhwphYvGmMEmStE9ruHjKr_igqGI9Al1SBvBQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				1文字ずつ文字色を変える 文字単位でのcss適用方法 ホームページ作成 All About
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://shu-sait.com/wp-content/uploads/8241481fdd0286cba156368c29f6a337.png" data-lightbox="roadtrip" data-title="Cssのselectionで選択したテキストの色を変更するやり方">
+						<img class="card-img" src="https://shu-sait.com/wp-content/uploads/8241481fdd0286cba156368c29f6a337.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZmNZ_Aj41J8aMmeff_uoHWLTKG-PS4T8fY8pCIp8N6qEMWW6QABTVHR1ihGSODtgiRl8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssのselectionで選択したテキストの色を変更するやり方
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ecmemo.net/wp-content/uploads/2019/01/css-linkcolor-change-8.png" data-lightbox="roadtrip" data-title="Cssでリンクの色を変更する方法 初心者向け ネットショップ語り">
+						<img class="card-img" src="https://ecmemo.net/wp-content/uploads/2019/01/css-linkcolor-change-8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd7YHsIeWlex2Gh0r3ZC6S_3PSUkIIYmnmGQwVLd60x9lS1opfH9Km60F3aK6owNTVdMU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssでリンクの色を変更する方法 初心者向け ネットショップ語り
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2018/06/color_bg1.jpg" data-lightbox="roadtrip" data-title="Cssで要素や文字に色をつける方法全部まとめ 侍エンジニアブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2018/06/color_bg1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOepyl6CdouBlZPw8ryRdopdfcL5V0gPvtXDPMftBKt8LPQbgYsjp012gJvs-qq84TrgQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssで要素や文字に色をつける方法全部まとめ 侍エンジニアブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/7c12ee2e4f6de548c02b8ac36fdad00b.jpeg" data-lightbox="roadtrip" data-title="Html Css このデザインはcssで実装できますか Teratail">
+						<img class="card-img" src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/7c12ee2e4f6de548c02b8ac36fdad00b.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QRaYllP-HcrnwTE1DnE3PXi13_b6K-i2oX5TyxXUFlh5TOVqrB9rx81VfjNtfiw1wh8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Html Css このデザインはcssで実装できますか Teratail
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://tech-dig.jp/wp/wp-content/uploads/2018/11/change-color.jpg" data-lightbox="roadtrip" data-title="Cssのみ 画像の上に文字を載せて文字色を切り替える Tech Dig">
+						<img class="card-img" src="https://tech-dig.jp/wp/wp-content/uploads/2018/11/change-color.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_Uun0fnshuuId4s955wYen-1YzleRGIXKJGcY1LGxqQCb6cL5PZpg_8y01M96wdFfLM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssのみ 画像の上に文字を載せて文字色を切り替える Tech Dig
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://stand-4u.com/stand-4u/wp-content/uploads/2019/11/nongrid.jpg" data-lightbox="roadtrip" data-title="Cssだけで 画像に重ねた文字のはみ出し部分 のテキスト色を変える方法">
+						<img class="card-img" src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/11/nongrid.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4ngM0DAqiVfAMaCgfG0_eruh3y6LVnLND_QABJkDA9zUT_VdkVs29c35W5FK61erzpo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssだけで 画像に重ねた文字のはみ出し部分 のテキスト色を変える方法
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://liginc.co.jp/wp-content/uploads/2016/01/eyecatch111_3.png" data-lightbox="roadtrip" data-title="Cssをつかい 要素の中央寄せ 文字色と背景色を変更してみよう 株式会社lig">
+						<img class="card-img" src="https://liginc.co.jp/wp-content/uploads/2016/01/eyecatch111_3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThl5JVmCr5N_kgp5ekcP1zfSgoIcbaYEggay8NcDdOx-pFI7NITyRXUiiVwc4HWcMvAEs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssをつかい 要素の中央寄せ 文字色と背景色を変更してみよう 株式会社lig
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://coliss.com/wp-content/uploads-201702/2017032701.png" data-lightbox="roadtrip" data-title="Css 文字の半分で異なるカラーを指定するcssのテクニック こういうのを思いついた時って絶対楽しい コリス">
+						<img class="card-img" src="https://coliss.com/wp-content/uploads-201702/2017032701.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LBJONIwYkJG367EZFkxXnOueVl3CRdbKn9dOOlEsUB-ghZOw37Hsw4ViL9sDJ2RFQ3I';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Css 文字の半分で異なるカラーを指定するcssのテクニック こういうのを思いついた時って絶対楽しい コリス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://beginners-high.com/wp/wp-content/uploads/2017/10/2307img-thumb02.jpg" data-lightbox="roadtrip" data-title="コピペで簡単 背景色や文字色をマウスオーバーでふわっと切り変える方法 ビギナーズハイ">
+						<img class="card-img" src="https://beginners-high.com/wp/wp-content/uploads/2017/10/2307img-thumb02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUawkpTDKL4UJ9zgCs-is_bMOzaM8bRlHBGHUYxtwtftV47oRJWzkKoXIXRQpuRS8HcE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				コピペで簡単 背景色や文字色をマウスオーバーでふわっと切り変える方法 ビギナーズハイ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.webantena.net/wp-content/uploads/2012/12/css3selection01.png" data-lightbox="roadtrip" data-title="Css マウスでドラッグした際の文字を選択範囲の色 ハイライトカラー を変更する方法 Css スニペット Webデザインの小ネタとtipsのまとめサイト ウェブアンテナ">
+						<img class="card-img" src="https://www.webantena.net/wp-content/uploads/2012/12/css3selection01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7xdOhJVBy12ZcEvIGq8BLHfoF9zStcRymkeNWXM0QYytykockbGjsNp59j6_qfvY3UU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Css マウスでドラッグした際の文字を選択範囲の色 ハイライトカラー を変更する方法 Css スニペット Webデザインの小ネタとtipsのまとめサイト ウェブアンテナ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2018/10/76864.jpg" data-lightbox="roadtrip" data-title="Html入門 文字や背景の色を変える方法をマスターしよう 侍エンジニアブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2018/10/76864.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgj4Jutj2hSpAdG1bE6qtl6JM6VRFTa_SLoDppcaJj5eYMqLhTfjsRuUfMw0Re0_tFngc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Html入門 文字や背景の色を変える方法をマスターしよう 侍エンジニアブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://marie-web.design/wp/wp-content/uploads/2018/03/text-gradation.jpg" data-lightbox="roadtrip" data-title="Css3でテキストにグラデーションをかける方法 Mariweb">
+						<img class="card-img" src="https://marie-web.design/wp/wp-content/uploads/2018/03/text-gradation.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXkvExnC6i66HMYm1erPEgyoSbFoezOr-bCPU_3X1E3n5UG-TWVUoZZZoExeFUj2X-lZU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Css3でテキストにグラデーションをかける方法 Mariweb
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DHTML%2520%25E3%2581%25AE%2520%25E6%2596%2587%25E7%25AB%25A0%2520%25E3%2581%25AE%2520%25E4%25B8%2580%25E9%2583%25A8%25E3%2581%25A0%25E3%2581%2591%2520%25E6%2596%2587%25E5%25AD%2597%25E3%2581%25AE%25E8%2589%25B2%25E3%2582%2592%2520%25E5%25A4%2589%25E6%259B%25B4%25E3%2581%2599%25E3%2582%258B%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D4e5e072a5eeb545ee50a27e7f05aae96&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540miriwo%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da5b017cddd007d7983df85f8086a550a&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=773a2095963c4c26fd89e8e1533f2521" data-lightbox="roadtrip" data-title="Html の 文章 の 一部だけ 文字の色を 変更する Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DHTML%2520%25E3%2581%25AE%2520%25E6%2596%2587%25E7%25AB%25A0%2520%25E3%2581%25AE%2520%25E4%25B8%2580%25E9%2583%25A8%25E3%2581%25A0%25E3%2581%2591%2520%25E6%2596%2587%25E5%25AD%2597%25E3%2581%25AE%25E8%2589%25B2%25E3%2582%2592%2520%25E5%25A4%2589%25E6%259B%25B4%25E3%2581%2599%25E3%2582%258B%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D4e5e072a5eeb545ee50a27e7f05aae96&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540miriwo%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da5b017cddd007d7983df85f8086a550a&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=773a2095963c4c26fd89e8e1533f2521" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBy6eFpb4T_O2gyx1zvXra_f-KWiWEwCdsCfmNesA4lENY3TZKtCWMDqSnYM0Ubcl6RVM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Html の 文章 の 一部だけ 文字の色を 変更する Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pythonjacascript/20180902/20180902211121.png" data-lightbox="roadtrip" data-title="はてなブログ 文字色 背景色のカスタマイズ一覧 とある科学の備忘録">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pythonjacascript/20180902/20180902211121.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSriw8VDlQEtTkka5YossXA4JFiVvWgr59Imc1S2RybRIxQtisA4sD3nYVS_UI3wVab7Wg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				はてなブログ 文字色 背景色のカスタマイズ一覧 とある科学の備忘録
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://webliker.info/wp-content/uploads/2018/06/b10ac2a6eab4454373a2ad72e94ebcd3.png" data-lightbox="roadtrip" data-title="リンクタグのcssまとめ リンクの色の変更やオシャレな装飾方法を紹介 Webliker">
+						<img class="card-img" src="http://webliker.info/wp-content/uploads/2018/06/b10ac2a6eab4454373a2ad72e94ebcd3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9MaU1-3q6i2MvrkrNEXjSZPnr09jQer9q8cukcS1pMeLukr3UwB9Ze_wxFu15Az7EZEE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				リンクタグのcssまとめ リンクの色の変更やオシャレな装飾方法を紹介 Webliker
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://uguisu.skr.jp/html/lib/link_2.gif" data-lightbox="roadtrip" data-title="リンクの色を変更 A Link">
+						<img class="card-img" src="https://uguisu.skr.jp/html/lib/link_2.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZko5wUK-8XTky5zSKaXtmQV-kW2dyFRYxxIKHPUm-LNhQfPicPjs1Lsih6IIucN6RpI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				リンクの色を変更 A Link
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://proengineer.internous.co.jp/topics/wp-content/uploads/2017/08/html_div7.png" data-lightbox="roadtrip" data-title="Htmlのdivタグでブロックレベルの要素を作成する方法 サービス プロエンジニア">
+						<img class="card-img" src="https://proengineer.internous.co.jp/topics/wp-content/uploads/2017/08/html_div7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvbX5K_D9Vryz3Z19azqopJ7c1Sk-WRpkvXQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Htmlのdivタグでブロックレベルの要素を作成する方法 サービス プロエンジニア
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sakichin.com/image/chapter02_img/chapter02_step03_010/3_1_010_04.gif" data-lightbox="roadtrip" data-title="Cssを使って背景色を変更する方法 さきちんweb">
+						<img class="card-img" src="https://sakichin.com/image/chapter02_img/chapter02_step03_010/3_1_010_04.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJXyaUYmx8P7qWp00vxUskQHfJzvGKK6Cd1Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssを使って背景色を変更する方法 さきちんweb
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://1-notes.com/wp-content/uploads/2020/01/%E6%96%87%E5%AD%97%E6%AF%8E%E3%83%BB%E8%A1%8C%E3%81%94%E3%81%A8%E3%81%AB%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E8%89%B2%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B.png" data-lightbox="roadtrip" data-title="Cssだけではn文字目やn行目の指定はできないけど 文字毎 行ごとにテキストの色を変える方法 One Notes">
+						<img class="card-img" src="https://1-notes.com/wp-content/uploads/2020/01/%E6%96%87%E5%AD%97%E6%AF%8E%E3%83%BB%E8%A1%8C%E3%81%94%E3%81%A8%E3%81%AB%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%81%AE%E8%89%B2%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGVyfgsoKKuRTs4hIXBrB6pmFvxIPhOSOpw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssだけではn文字目やn行目の指定はできないけど 文字毎 行ごとにテキストの色を変える方法 One Notes
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://livedoor.blogimg.jp/staff-blogpark_help/imgs/f/6/f6b0608c.jpg" data-lightbox="roadtrip" data-title="文字のサイズや色などをカスタマイズ ライブドアブログのヘルプ Pc向け">
+						<img class="card-img" src="https://livedoor.blogimg.jp/staff-blogpark_help/imgs/f/6/f6b0608c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4IBQbjegGOEHts4C67FJYo2Wa6pagh_27og';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				文字のサイズや色などをカスタマイズ ライブドアブログのヘルプ Pc向け
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="/search?q=%E6%96%87%E5%AD%97+%E8%89%B2%E5%A1%97%E3%82%8A&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqofkpa2fpl1jvx0cefv8yqrmdpknfin J2uwmki75qnpzrw2wp Usqp Cau">
+						<img class="card-img" src="/search?q=%E6%96%87%E5%AD%97+%E8%89%B2%E5%A1%97%E3%82%8A&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=%E6%96%87%E5%AD%97+%E8%89%B2%E5%A1%97%E3%82%8A&amp;tbm=isch';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqofkpa2fpl1jvx0cefv8yqrmdpknfin J2uwmki75qnpzrw2wp Usqp Cau
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://livedoor.blogimg.jp/garu_leo/imgs/4/8/4817b819.png" data-lightbox="roadtrip" data-title="ブログの文字色 フォントカラー を変更する 半熟コード">
+						<img class="card-img" src="http://livedoor.blogimg.jp/garu_leo/imgs/4/8/4817b819.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSde7iIkLXGAJC3OUa6vAkEXZjURwjZjOmc6Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ブログの文字色 フォントカラー を変更する 半熟コード
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://love-wave.com/wp-content/uploads/kakomi-css-1.png" data-lightbox="roadtrip" data-title="Css シンプルな囲み枠 ボックス コピペで楽チン変更も簡単 Purple Life">
+						<img class="card-img" src="https://love-wave.com/wp-content/uploads/kakomi-css-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWqVMdJfrwa76xS7Vp9ERr5LtibxL6f_O1fg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Css シンプルな囲み枠 ボックス コピペで楽チン変更も簡単 Purple Life
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://1000log.com/wp-content/uploads/2020/01/44-940x470.jpg" data-lightbox="roadtrip" data-title="Htmlとcss 色の変更rgbとrgba 文字色や背景色の変更">
+						<img class="card-img" src="https://1000log.com/wp-content/uploads/2020/01/44-940x470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-GVX6KWnAuWRFV6WTzBk2GN9XXxZnJ8rACQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Htmlとcss 色の変更rgbとrgba 文字色や背景色の変更
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://mdstage.com/wp-content/uploads/2017/10/css_03.jpg" data-lightbox="roadtrip" data-title="Cssでフォント 文字 の大きさや色 太さを変更する方法を覚えよう マインドステージ">
+						<img class="card-img" src="https://mdstage.com/wp-content/uploads/2017/10/css_03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZQ6ekYXOSls80sCoLeKDFZ3ZxGMBfkTSJzA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssでフォント 文字 の大きさや色 太さを変更する方法を覚えよう マインドステージ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://shu-sait.com/wp-content/uploads/8255eaaa8c1fa80b23650798679958cc.png" data-lightbox="roadtrip" data-title="Cssのselectionで選択したテキストの色を変更するやり方">
+						<img class="card-img" src="https://shu-sait.com/wp-content/uploads/8255eaaa8c1fa80b23650798679958cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78NyVOT1OnRzbGkI2jPcxpyFUjImCQeJ73g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssのselectionで選択したテキストの色を変更するやり方
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wunderstand.net/wp-content/uploads/2019/04/00-3-520x300.jpg" data-lightbox="roadtrip" data-title="Cssで背景を設定 背景画像や背景色のカスタマイズ方法 Bond Blog">
+						<img class="card-img" src="https://wunderstand.net/wp-content/uploads/2019/04/00-3-520x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdMTDizum0l4OxlmJPsjvgtixiirwoOfpug';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssで背景を設定 背景画像や背景色のカスタマイズ方法 Bond Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://shu-naka-blog.com/wp-content/uploads/2020/08/thumbnail.jpg" data-lightbox="roadtrip" data-title="Css カーソルでテキストを選択した際のハイライト色を変更してみよう Shu Blog">
+						<img class="card-img" src="https://shu-naka-blog.com/wp-content/uploads/2020/08/thumbnail.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-hZkMvc4_cpenfXme6w8t86ROififYlKtw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Css カーソルでテキストを選択した際のハイライト色を変更してみよう Shu Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://freedom-clubtokyo.com/css-font/css-color.jpg" data-lightbox="roadtrip" data-title="Cssを書換えてfontの色と大きさを変更する ホームページビルダー21 22フルcssテンプレート編集">
+						<img class="card-img" src="http://freedom-clubtokyo.com/css-font/css-color.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgb0leftQc3wlFA8oneBtw-_aqgHQb0y-l3w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cssを書換えてfontの色と大きさを変更する ホームページビルダー21 22フルcssテンプレート編集
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>
